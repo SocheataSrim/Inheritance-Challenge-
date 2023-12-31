@@ -1,0 +1,25 @@
+public class Main {
+    public static void main(String[] args) {
+
+        Employee tim = new Employee("Tim", "13/12/2001", "01/01/2024");
+        System.out.println(tim);
+        System.out.println("Age=" + tim.getAge());
+        System.out.println("Pay=" + tim.collectPay());
+
+        SaleriedEmployee kim = new SaleriedEmployee("Kim", "12/12/2002", "08/09/2025", 250000);
+        System.out.println(kim);
+        System.out.println("kim's paycheck is $" + kim.collectPay());
+
+        kim.retired();
+        System.out.println("kim's pension is $" + kim.collectPay());
+
+        HourlyEmployee lina = new HourlyEmployee("Lina", "05/05/2005", "03/04/2022", 15);
+        System.out.println(lina);
+        System.out.println("Lina's hourly pay is $" + lina.collectPay());
+        System.out.println("Lina's double pay is $" + lina.getDoublePay());
+    }
+
+
+
+
+}
